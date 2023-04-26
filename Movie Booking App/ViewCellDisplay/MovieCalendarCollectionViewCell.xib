@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCalendarCollectionViewCell" id="gTV-IL-0wX" customClass="MovieCalendarCollectionViewCell" customModule="Movie_Booking_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="163" height="167"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="163" height="167"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cjk-qp-4Nn">
+                        <rect key="frame" x="0.0" y="0.0" width="163" height="167"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FfB-Bs-uaE">
+                                <rect key="frame" x="69" y="61.333333333333343" width="25" height="44.666666666666657"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FRI" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qPg-70-tUe">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="14.333333333333334"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="26" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FPA-OX-kjw">
+                                        <rect key="frame" x="0.0" y="19.333333333333336" width="25" height="25.333333333333336"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="FPA-OX-kjw" secondAttribute="bottom" id="1y9-yC-z1b"/>
+                                    <constraint firstItem="FPA-OX-kjw" firstAttribute="leading" secondItem="FfB-Bs-uaE" secondAttribute="leading" id="4pk-Cj-x2l"/>
+                                    <constraint firstItem="qPg-70-tUe" firstAttribute="top" secondItem="FfB-Bs-uaE" secondAttribute="top" id="8Iy-ox-evW"/>
+                                    <constraint firstItem="qPg-70-tUe" firstAttribute="leading" secondItem="FfB-Bs-uaE" secondAttribute="leading" id="Hd9-Kp-Rhe"/>
+                                    <constraint firstItem="FPA-OX-kjw" firstAttribute="top" secondItem="qPg-70-tUe" secondAttribute="bottom" constant="5" id="P3u-hQ-3TO"/>
+                                    <constraint firstAttribute="trailing" secondItem="qPg-70-tUe" secondAttribute="trailing" id="a59-td-GvA"/>
+                                    <constraint firstAttribute="trailing" secondItem="FPA-OX-kjw" secondAttribute="trailing" id="op1-W4-apB"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="FfB-Bs-uaE" firstAttribute="centerY" secondItem="cjk-qp-4Nn" secondAttribute="centerY" id="1m5-U3-b4T"/>
+                            <constraint firstItem="FfB-Bs-uaE" firstAttribute="centerX" secondItem="cjk-qp-4Nn" secondAttribute="centerX" id="D6D-sU-2pQ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="cjk-qp-4Nn" secondAttribute="bottom" id="2IB-1W-Yjw"/>
+                <constraint firstItem="cjk-qp-4Nn" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="DhH-Rl-pGD"/>
+                <constraint firstItem="cjk-qp-4Nn" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="er2-to-zJK"/>
+                <constraint firstAttribute="trailing" secondItem="cjk-qp-4Nn" secondAttribute="trailing" id="sgY-FJ-o9c"/>
+            </constraints>
+            <size key="customSize" width="163" height="167"/>
+            <connections>
+                <outlet property="lblDate" destination="FPA-OX-kjw" id="bTZ-zD-1ru"/>
+                <outlet property="lblDay" destination="qPg-70-tUe" id="RTx-36-gRZ"/>
+                <outlet property="viewCalendarItem" destination="cjk-qp-4Nn" id="U97-8V-Zgb"/>
+            </connections>
+            <point key="canvasLocation" x="58.778625954198468" y="60.91549295774648"/>
+        </collectionViewCell>
+    </objects>
+</document>

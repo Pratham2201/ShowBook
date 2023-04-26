@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="BookingTableViewCell" rowHeight="276" id="KGk-i7-Jjw" customClass="BookingTableViewCell" customModule="Movie_Booking_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="332" height="276"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="332" height="276"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="poster_1" translatesAutoresizingMaskIntoConstraints="NO" id="FHu-n1-Wf9">
+                        <rect key="frame" x="10" y="10" width="100" height="256"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="100" id="Beh-x3-h60"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Movie Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4RD-fF-6PU">
+                        <rect key="frame" x="120" y="10" width="202" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Movie Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GUK-CF-SO8">
+                        <rect key="frame" x="120" y="152" width="202" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Movie Hall" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSx-TK-xIo">
+                        <rect key="frame" x="120" y="183" width="202" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Seats Booked" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="35Y-OW-aRi">
+                        <rect key="frame" x="120" y="214" width="202" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Total Amount" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V8F-aE-xbW">
+                        <rect key="frame" x="120" y="245" width="202" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="FHu-n1-Wf9" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="09K-SW-DN9"/>
+                    <constraint firstAttribute="trailing" secondItem="GUK-CF-SO8" secondAttribute="trailing" constant="10" id="5e1-Qn-HJm"/>
+                    <constraint firstAttribute="trailing" secondItem="BSx-TK-xIo" secondAttribute="trailing" constant="10" id="6At-Np-ooW"/>
+                    <constraint firstItem="4RD-fF-6PU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="BRj-p7-8wk"/>
+                    <constraint firstItem="35Y-OW-aRi" firstAttribute="top" secondItem="BSx-TK-xIo" secondAttribute="bottom" constant="5" id="Fo6-tV-Ed1"/>
+                    <constraint firstItem="GUK-CF-SO8" firstAttribute="top" secondItem="4RD-fF-6PU" secondAttribute="bottom" constant="5" id="Juf-6s-cIy"/>
+                    <constraint firstAttribute="bottom" secondItem="FHu-n1-Wf9" secondAttribute="bottom" constant="10" id="OKA-bb-bJ6"/>
+                    <constraint firstAttribute="trailing" secondItem="35Y-OW-aRi" secondAttribute="trailing" constant="10" id="ZHj-Lp-UuA"/>
+                    <constraint firstItem="FHu-n1-Wf9" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="ZyD-kA-7eu"/>
+                    <constraint firstItem="V8F-aE-xbW" firstAttribute="leading" secondItem="FHu-n1-Wf9" secondAttribute="trailing" constant="10" id="eiP-Qf-8PJ"/>
+                    <constraint firstItem="BSx-TK-xIo" firstAttribute="leading" secondItem="FHu-n1-Wf9" secondAttribute="trailing" constant="10" id="fiR-29-mnb"/>
+                    <constraint firstItem="BSx-TK-xIo" firstAttribute="top" secondItem="GUK-CF-SO8" secondAttribute="bottom" constant="10" id="hDI-a7-2Mj"/>
+                    <constraint firstItem="GUK-CF-SO8" firstAttribute="leading" secondItem="FHu-n1-Wf9" secondAttribute="trailing" constant="10" id="hvd-N9-UTL"/>
+                    <constraint firstItem="35Y-OW-aRi" firstAttribute="leading" secondItem="FHu-n1-Wf9" secondAttribute="trailing" constant="10" id="jfI-Su-Ir2"/>
+                    <constraint firstAttribute="trailing" secondItem="V8F-aE-xbW" secondAttribute="trailing" constant="10" id="mka-B3-G3R"/>
+                    <constraint firstAttribute="bottom" secondItem="V8F-aE-xbW" secondAttribute="bottom" constant="10" id="r4D-bx-pDD"/>
+                    <constraint firstItem="4RD-fF-6PU" firstAttribute="leading" secondItem="FHu-n1-Wf9" secondAttribute="trailing" constant="10" id="vVt-w4-dpp"/>
+                    <constraint firstItem="V8F-aE-xbW" firstAttribute="top" secondItem="35Y-OW-aRi" secondAttribute="bottom" constant="10" id="z8A-k2-USD"/>
+                    <constraint firstAttribute="trailing" secondItem="4RD-fF-6PU" secondAttribute="trailing" constant="10" id="zwV-yR-e2H"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgMovie" destination="FHu-n1-Wf9" id="Sff-t5-qlq"/>
+                <outlet property="lblMovieDate" destination="GUK-CF-SO8" id="ndS-He-Y9x"/>
+                <outlet property="lblMovieHall" destination="BSx-TK-xIo" id="Wyx-mc-3eT"/>
+                <outlet property="lblMovieTitle" destination="4RD-fF-6PU" id="FgC-HJ-Fw3"/>
+                <outlet property="lblSeatsBooked" destination="35Y-OW-aRi" id="va6-BZ-1g3"/>
+                <outlet property="lblTotalAmount" destination="V8F-aE-xbW" id="ahz-Fh-F9C"/>
+            </connections>
+            <point key="canvasLocation" x="19.847328244274809" y="101.40845070422536"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="poster_1" width="900" height="1333"/>
+    </resources>
+</document>

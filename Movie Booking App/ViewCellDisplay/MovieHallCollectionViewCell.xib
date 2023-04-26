@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieHallCollectionViewCell" id="gTV-IL-0wX" customClass="MovieHallCollectionViewCell" customModule="Movie_Booking_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="254" height="127"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="254" height="127"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Cv7-Ei-kb8">
+                        <rect key="frame" x="0.0" y="0.0" width="254" height="127"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cineplex Movies" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g7B-n3-ceK">
+                                <rect key="frame" x="20" y="0.0" width="124" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="qwE-AF-bdy">
+                                <rect key="frame" x="0.0" y="31" width="254" height="96"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="15" minimumInteritemSpacing="0.0" id="JE6-ZY-t9Z">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <connections>
+                                    <outlet property="dataSource" destination="gTV-IL-0wX" id="yzA-hj-MeY"/>
+                                    <outlet property="delegate" destination="gTV-IL-0wX" id="cuS-jd-x39"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="g7B-n3-ceK" firstAttribute="top" secondItem="Cv7-Ei-kb8" secondAttribute="top" id="Ldy-bK-KFe"/>
+                            <constraint firstAttribute="bottom" secondItem="qwE-AF-bdy" secondAttribute="bottom" id="SZT-Ks-QZ5"/>
+                            <constraint firstItem="qwE-AF-bdy" firstAttribute="leading" secondItem="Cv7-Ei-kb8" secondAttribute="leading" id="lGW-u2-tsg"/>
+                            <constraint firstAttribute="trailing" secondItem="qwE-AF-bdy" secondAttribute="trailing" id="ml6-UZ-zvu"/>
+                            <constraint firstItem="qwE-AF-bdy" firstAttribute="top" secondItem="g7B-n3-ceK" secondAttribute="bottom" constant="10" id="t2g-gK-Aky"/>
+                            <constraint firstItem="g7B-n3-ceK" firstAttribute="leading" secondItem="Cv7-Ei-kb8" secondAttribute="leading" constant="20" id="uaI-jx-x2p"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="Cv7-Ei-kb8" secondAttribute="trailing" id="4Lr-Jo-H8n"/>
+                <constraint firstAttribute="bottom" secondItem="Cv7-Ei-kb8" secondAttribute="bottom" id="9qj-Hs-fiG"/>
+                <constraint firstItem="Cv7-Ei-kb8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="JZl-0Q-hRs"/>
+                <constraint firstItem="Cv7-Ei-kb8" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="cPP-Uw-iy4"/>
+            </constraints>
+            <size key="customSize" width="254" height="127"/>
+            <connections>
+                <outlet property="cvMovieTiming" destination="qwE-AF-bdy" id="GtD-tN-6nL"/>
+                <outlet property="lblMovieHallName" destination="g7B-n3-ceK" id="f9m-QF-CAg"/>
+                <outlet property="viewMoviewItem" destination="Cv7-Ei-kb8" id="RuL-F4-VFJ"/>
+            </connections>
+            <point key="canvasLocation" x="126.71755725190839" y="46.83098591549296"/>
+        </collectionViewCell>
+    </objects>
+</document>

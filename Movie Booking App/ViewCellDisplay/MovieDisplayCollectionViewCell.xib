@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieDisplay" id="gTV-IL-0wX" customClass="MovieDisplayCollectionViewCell" customModule="Movie_Booking_App" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="142" height="222"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="142" height="222"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7fp-w2-1B4">
+                        <rect key="frame" x="0.0" y="0.0" width="142" height="222"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="1" verticalCompressionResistancePriority="1" image="poster_1" translatesAutoresizingMaskIntoConstraints="NO" id="EKz-ej-PEw">
+                                <rect key="frame" x="10" y="0.0" width="122" height="163.33333333333334"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Jurassic World" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AqQ-62-Q1i">
+                                <rect key="frame" x="10" y="173.33333333333334" width="83.333333333333329" height="14.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1hr 12m" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oZP-Xx-UgE">
+                                <rect key="frame" x="10" y="197.66666666666666" width="44" height="14.333333333333343"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="AqQ-62-Q1i" firstAttribute="top" secondItem="EKz-ej-PEw" secondAttribute="bottom" constant="10" id="18S-Q8-PtY"/>
+                            <constraint firstItem="EKz-ej-PEw" firstAttribute="leading" secondItem="7fp-w2-1B4" secondAttribute="leading" constant="10" id="Ddv-0Q-5ks"/>
+                            <constraint firstAttribute="bottom" secondItem="oZP-Xx-UgE" secondAttribute="bottom" constant="10" id="J1i-pm-eWU"/>
+                            <constraint firstAttribute="trailing" secondItem="EKz-ej-PEw" secondAttribute="trailing" constant="10" id="LjA-U2-UlW"/>
+                            <constraint firstItem="AqQ-62-Q1i" firstAttribute="leading" secondItem="7fp-w2-1B4" secondAttribute="leading" constant="10" id="LjM-zI-Ph8"/>
+                            <constraint firstItem="oZP-Xx-UgE" firstAttribute="leading" secondItem="7fp-w2-1B4" secondAttribute="leading" constant="10" id="S1l-wb-X9B"/>
+                            <constraint firstItem="EKz-ej-PEw" firstAttribute="top" secondItem="7fp-w2-1B4" secondAttribute="top" id="TzB-Bq-CUq"/>
+                            <constraint firstItem="oZP-Xx-UgE" firstAttribute="top" secondItem="AqQ-62-Q1i" secondAttribute="bottom" constant="10" id="w1B-Nx-IZH"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="7fp-w2-1B4" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="PSk-Ll-ber"/>
+                <constraint firstAttribute="bottom" secondItem="7fp-w2-1B4" secondAttribute="bottom" id="Sfy-Kz-Woq"/>
+                <constraint firstAttribute="trailing" secondItem="7fp-w2-1B4" secondAttribute="trailing" id="dz1-zy-j6d"/>
+                <constraint firstItem="7fp-w2-1B4" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="jZT-TQ-Jxc"/>
+            </constraints>
+            <size key="customSize" width="142" height="222"/>
+            <connections>
+                <outlet property="ivMovie" destination="EKz-ej-PEw" id="b1v-x4-7yh"/>
+                <outlet property="lblMovieName" destination="AqQ-62-Q1i" id="yhv-So-j35"/>
+                <outlet property="lblMovieTime" destination="oZP-Xx-UgE" id="ZYM-2R-KQ3"/>
+            </connections>
+            <point key="canvasLocation" x="29.007633587786259" y="80.281690140845072"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="poster_1" width="900" height="1333"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
