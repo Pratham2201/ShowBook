@@ -25,7 +25,7 @@ class RegisterPresenter: IRegisterPresenter {
         PasswordErrorType.NoUpperCase:        "Password must contain at least 1 uppercase character",
         PasswordErrorType.NoLowerCase:        "Password must contain at least 1 lowercase character",
         PasswordErrorType.NoSpecialCharacter: "Password must contain at least 1 special character like $, &, ?, @, #, !",
-        PasswordErrorType.NoSpecialCharacter: "Password must contain at least 1 digit",
+        PasswordErrorType.NoDigit: "Password must contain at least 1 digit",
         PasswordErrorType.LowSize:            "Password must be at least 8 characters"]
     
     func setUpErrorLabel(errorLabel: EntryLabels, isErrorPresent: Bool, _ errorType: PasswordErrorType? = nil) {

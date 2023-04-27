@@ -22,6 +22,17 @@
 		5E5A1F5E29E7E26800A70EA6 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A1F5D29E7E26800A70EA6 /* Models.swift */; };
 		5E5A1F6029E7E42A00A70EA6 /* DataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A1F5F29E7E42900A70EA6 /* DataSource.swift */; };
 		5E5A1F6229ED6D0A00A70EA6 /* BookingConfirmedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E5A1F6129ED6D0A00A70EA6 /* BookingConfirmedViewController.swift */; };
+		5E6950D729FA592500BD0094 /* Register.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6950CC29FA592400BD0094 /* Register.png */; };
+		5E6950D829FA592500BD0094 /* Menu.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6950CD29FA592400BD0094 /* Menu.png */; };
+		5E6950D929FA592500BD0094 /* Login.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6950CE29FA592400BD0094 /* Login.png */; };
+		5E6950DA29FA592500BD0094 /* Menu - Filter.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6950CF29FA592400BD0094 /* Menu - Filter.png */; };
+		5E6950DB29FA592500BD0094 /* Menu - Search.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6950D029FA592500BD0094 /* Menu - Search.png */; };
+		5E6950DC29FA592500BD0094 /* Booking Confirmed.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6950D129FA592500BD0094 /* Booking Confirmed.png */; };
+		5E6950DD29FA592500BD0094 /* Movie Page.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6950D229FA592500BD0094 /* Movie Page.png */; };
+		5E6950DE29FA592500BD0094 /* My Bookings.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6950D329FA592500BD0094 /* My Bookings.png */; };
+		5E6950DF29FA592500BD0094 /* Home.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6950D429FA592500BD0094 /* Home.png */; };
+		5E6950E029FA592500BD0094 /* Seat Booking - Dropdown.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6950D529FA592500BD0094 /* Seat Booking - Dropdown.png */; };
+		5E6950E129FA592500BD0094 /* Seat Booking.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E6950D629FA592500BD0094 /* Seat Booking.png */; };
 		5E918C8929F15CD70093B436 /* CollectionChipFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E918C8529F15CD70093B436 /* CollectionChipFlowLayout.swift */; };
 		5E918C8A29F15CD70093B436 /* PagingCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E918C8629F15CD70093B436 /* PagingCollectionViewLayout.swift */; };
 		5E918C8B29F15CD70093B436 /* CollectionGridFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E918C8729F15CD70093B436 /* CollectionGridFlowLayout.swift */; };
@@ -90,6 +101,17 @@
 		5E5A1F5D29E7E26800A70EA6 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 		5E5A1F5F29E7E42900A70EA6 /* DataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataSource.swift; sourceTree = "<group>"; };
 		5E5A1F6129ED6D0A00A70EA6 /* BookingConfirmedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookingConfirmedViewController.swift; sourceTree = "<group>"; };
+		5E6950CC29FA592400BD0094 /* Register.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Register.png; sourceTree = "<group>"; };
+		5E6950CD29FA592400BD0094 /* Menu.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Menu.png; sourceTree = "<group>"; };
+		5E6950CE29FA592400BD0094 /* Login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Login.png; sourceTree = "<group>"; };
+		5E6950CF29FA592400BD0094 /* Menu - Filter.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu - Filter.png"; sourceTree = "<group>"; };
+		5E6950D029FA592500BD0094 /* Menu - Search.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Menu - Search.png"; sourceTree = "<group>"; };
+		5E6950D129FA592500BD0094 /* Booking Confirmed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Booking Confirmed.png"; sourceTree = "<group>"; };
+		5E6950D229FA592500BD0094 /* Movie Page.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Movie Page.png"; sourceTree = "<group>"; };
+		5E6950D329FA592500BD0094 /* My Bookings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "My Bookings.png"; sourceTree = "<group>"; };
+		5E6950D429FA592500BD0094 /* Home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Home.png; sourceTree = "<group>"; };
+		5E6950D529FA592500BD0094 /* Seat Booking - Dropdown.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seat Booking - Dropdown.png"; sourceTree = "<group>"; };
+		5E6950D629FA592500BD0094 /* Seat Booking.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Seat Booking.png"; sourceTree = "<group>"; };
 		5E918C8529F15CD70093B436 /* CollectionChipFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionChipFlowLayout.swift; sourceTree = "<group>"; };
 		5E918C8629F15CD70093B436 /* PagingCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PagingCollectionViewLayout.swift; sourceTree = "<group>"; };
 		5E918C8729F15CD70093B436 /* CollectionGridFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionGridFlowLayout.swift; sourceTree = "<group>"; };
@@ -155,6 +177,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5E6950CB29FA58B800BD0094 /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				5E6950D129FA592500BD0094 /* Booking Confirmed.png */,
+				5E6950D429FA592500BD0094 /* Home.png */,
+				5E6950CE29FA592400BD0094 /* Login.png */,
+				5E6950CF29FA592400BD0094 /* Menu - Filter.png */,
+				5E6950D029FA592500BD0094 /* Menu - Search.png */,
+				5E6950CD29FA592400BD0094 /* Menu.png */,
+				5E6950D229FA592500BD0094 /* Movie Page.png */,
+				5E6950D329FA592500BD0094 /* My Bookings.png */,
+				5E6950CC29FA592400BD0094 /* Register.png */,
+				5E6950D529FA592500BD0094 /* Seat Booking - Dropdown.png */,
+				5E6950D629FA592500BD0094 /* Seat Booking.png */,
+			);
+			path = Screenshots;
+			sourceTree = "<group>";
+		};
 		5E918C8429F15CD70093B436 /* CollectionViewFlowLayout */ = {
 			isa = PBXGroup;
 			children = (
@@ -219,6 +259,7 @@
 		5ED0B33629DBEF9800B7BACA /* Movie Booking App */ = {
 			isa = PBXGroup;
 			children = (
+				5E6950CB29FA58B800BD0094 /* Screenshots */,
 				5E918C9129F1621E0093B436 /* ViewModel */,
 				5E918C8E29F15D850093B436 /* Worker */,
 				5E918C8D29F15D7C0093B436 /* Router */,
@@ -390,15 +431,26 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5E6950D829FA592500BD0094 /* Menu.png in Resources */,
+				5E6950DB29FA592500BD0094 /* Menu - Search.png in Resources */,
+				5E6950D929FA592500BD0094 /* Login.png in Resources */,
+				5E6950DA29FA592500BD0094 /* Menu - Filter.png in Resources */,
+				5E6950DE29FA592500BD0094 /* My Bookings.png in Resources */,
 				5E030FED29E3F71500733C32 /* MovieHallCollectionViewCell.xib in Resources */,
 				5EF93A1229DEA2140049C47D /* MovieDisplayCollectionViewCell.xib in Resources */,
 				5ED0B34429DBEF9900B7BACA /* LaunchScreen.storyboard in Resources */,
 				5E5A1F5829E444C000A70EA6 /* SeatsCollectionViewCell.xib in Resources */,
+				5E6950E129FA592500BD0094 /* Seat Booking.png in Resources */,
+				5E6950DC29FA592500BD0094 /* Booking Confirmed.png in Resources */,
+				5E6950DF29FA592500BD0094 /* Home.png in Resources */,
 				5ED0B34129DBEF9900B7BACA /* Assets.xcassets in Resources */,
 				5ED0B33F29DBEF9800B7BACA /* Main.storyboard in Resources */,
+				5E6950D729FA592500BD0094 /* Register.png in Resources */,
 				5E030FE929E3F18400733C32 /* MovieTimeCollectionViewCell.xib in Resources */,
 				5EF3B66D29F1203600C4B892 /* BookingTableViewCell.xib in Resources */,
+				5E6950DD29FA592500BD0094 /* Movie Page.png in Resources */,
 				5E030FE529E3DDA900733C32 /* MovieCalendarCollectionViewCell.xib in Resources */,
+				5E6950E029FA592500BD0094 /* Seat Booking - Dropdown.png in Resources */,
 				5E5A1F5C29E5613D00A70EA6 /* DropdownTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -615,7 +667,7 @@
 				DEVELOPMENT_TEAM = 629S26A79G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Movie Booking App/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = ShowMyBook;
+				INFOPLIST_KEY_CFBundleDisplayName = ShowBook;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -645,7 +697,7 @@
 				DEVELOPMENT_TEAM = 629S26A79G;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Movie Booking App/Info.plist";
-				INFOPLIST_KEY_CFBundleDisplayName = ShowMyBook;
+				INFOPLIST_KEY_CFBundleDisplayName = ShowBook;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;

@@ -58,7 +58,7 @@ extension MenuViewController: UICollectionViewDelegate, UICollectionViewDataSour
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "MovieDisplay", for: indexPath) as? MovieDisplayCollectionViewCell else { return MovieDisplayCollectionViewCell() }
         cell.setUpCell(posterName: backgroundColor[indexPath.row%5], movie: movies[indexPath.row].movie)
-        output?.setMovieImage(imageIndex: movies[indexPath.row].movieIndex)
+        output?.setMovieImage(imageIndex: movies[indexPath.row].movieIndex, movieIndexPath: indexPath)
         return cell
     }
     
@@ -78,8 +78,8 @@ extension MenuViewController: UISearchBarDelegate {
 }
 
 extension MenuViewController {
-    func setImage(imageIndex: Int) {
-        guard let cell = cvBrowse.cellForItem(at: IndexPath(row: imageIndex, section: 0)) as? MovieDisplayCollectionViewCell else { return }
+    func setImage(imageIndex: Int, movieIndexPath: IndexPath) {
+        guard let cell = cvBrowse.cellForItem(at: movieIndexPath) as? MovieDisplayCollectionViewCell else { return }
         cell.ivMovie.image = UIImage(data: imagesData[imageIndex])
     }
     

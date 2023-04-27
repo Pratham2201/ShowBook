@@ -10,7 +10,7 @@ import UIKit
 
 protocol IMenuInteractor {
     
-    func setMovieImage(imageIndex: Int)
+    func setMovieImage(imageIndex: Int, movieIndexPath: IndexPath)
     
     func filteringYear(movies: [(movie: Movie, movieIndex: Int, imageData: Data)])
     
@@ -30,12 +30,12 @@ class MenuInteractor: IMenuInteractor {
     var output: IMenuPresenter?
     var worker: IMenuWorker?
     
-    func setMovieImage(imageIndex: Int) {
+    func setMovieImage(imageIndex: Int, movieIndexPath: IndexPath) {
         DispatchQueue.global(qos: .userInitiated).async {
             if(imagesData[imageIndex] == Data()) {
                 self.worker?.fetchImageData(imageIndex: imageIndex)
             }
-            self.output?.setUpImageForCell(imageIndex: imageIndex)
+            self.output?.setUpImageForCell(imageIndex: imageIndex, movieIndexPath: movieIndexPath)
         }
     }
     

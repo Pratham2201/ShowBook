@@ -10,7 +10,7 @@ import UIKit
 
 protocol IMenuPresenter {
     
-    func setUpImageForCell(imageIndex: Int)
+    func setUpImageForCell(imageIndex: Int, movieIndexPath: IndexPath)
     
     func setUpFilteredMovies(filteredMovies: [(movie: Movie, movieIndex: Int, imageData: Data)])
     
@@ -25,9 +25,9 @@ class MenuPresenter: IMenuPresenter {
         showAlertBox(alertBoxParameters: AlertBoxParamters(title: "Filters", msg: "Choose from options below to filter", actions: actions), vc: output)
     }
     
-    func setUpImageForCell(imageIndex: Int) {
+    func setUpImageForCell(imageIndex: Int, movieIndexPath: IndexPath) {
         DispatchQueue.main.async {
-            self.output?.setImage(imageIndex: imageIndex)
+            self.output?.setImage(imageIndex: imageIndex, movieIndexPath: movieIndexPath)
         }
     }
     
